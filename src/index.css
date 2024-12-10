@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.App {
+  text-align: center;
+}
+
+input {
+  margin-top: 20px;
+}
+.listaPokemons {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemonCard {
+  flex: 1 1 calc(25% - 16px);    
+  border: 2px solid black;
+  text-align: center;
+  padding: 5px 10px;
+  max-width: 230px;
+  max-height: 327px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  margin-bottom: 8%;
+  background-color: rgb(109, 109, 109) !important;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 16px; 
+  justify-content: center; 
+}
+
+.pokemonCard:hover {
+  border: 4px solid red;
+  color: red;
+  animation: color-change 2s infinite;
+  transition: border 0.5s ease;
+}
+
+.favorite {
+  border: 4px solid red;
+  color: red;
+  animation: color-change 2s infinite;
+  transition: border 0.5s ease;
+}
+
+@keyframes color-change {
+  0% {
+      border-color: red;
+      color: red;
+  }
+  10% {
+      border-color: orange;
+      color: orange;
+  }
+  20% {
+      border-color: yellow;
+      color: yellow
+  }
+  30% {
+      border-color: limegreen;
+      color: limegreen
+  }
+  40% {
+      border-color: cyan;
+      color: cyan
+  }
+  50% {
+      border-color: blue;
+      color: blue
+  }
+  60% {
+      border-color: indigo;
+      color: indigo
+  }
+  70% {
+      border-color: violet;
+      color: violet
+  }
+  80% {
+      border-color: pink;
+      color: pink
+  }
+  90% {
+      border-color: magenta;
+      color: magenta
+  }
+  100% {
+      border-color: red;
+      color: red
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.pageButton {
+  padding: 10px 15px;
+  border: 2px solid rgb(0, 26, 255);
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 10px;
+  color: rgb(0, 26, 255);
+}
+
+.active {
+  background-color: rgb(230, 187, 0);
+}
+
+.icon {
+  padding: 2px;
+}
+body {
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  height: 90vh; 
+  margin: 0; 
+  background-color: rgb(48, 48, 48);
+}
+.btn-favorites {
+  margin-bottom: 50px;
+  color: rgb(32, 0, 216);
+  font-weight: bold;
+  border-color: rgb(32, 0, 216);
+  border-width: 2px;
+  ;
+}
